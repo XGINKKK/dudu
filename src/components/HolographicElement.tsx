@@ -15,7 +15,7 @@ const HolographicElement: React.FC<HolographicElementProps> = ({ size = 'md', de
   return (
     <div className={`${sizeClasses[size]} absolute inset-0 m-auto`}>
       <div 
-        className="w-full h-full rounded-full border border-cyan-400/20 animate-spin"
+        className="w-full h-full rounded-full border border-purple-400/20 animate-spin"
         style={{
           animationDuration: '20s',
           animationDelay: `${delay}s`,
@@ -23,15 +23,15 @@ const HolographicElement: React.FC<HolographicElementProps> = ({ size = 'md', de
         }}
       >
         {/* Segmented border effect */}
-        <div className="absolute top-0 left-1/2 w-2 h-2 -translate-x-1/2 -translate-y-1/2 bg-cyan-400 rounded-full shadow-lg shadow-cyan-400/50" />
-        <div className="absolute top-1/2 right-0 w-2 h-2 translate-x-1/2 -translate-y-1/2 bg-cyan-400 rounded-full shadow-lg shadow-cyan-400/50" />
-        <div className="absolute bottom-0 left-1/2 w-2 h-2 -translate-x-1/2 translate-y-1/2 bg-cyan-400 rounded-full shadow-lg shadow-cyan-400/50" />
-        <div className="absolute top-1/2 left-0 w-2 h-2 -translate-x-1/2 -translate-y-1/2 bg-cyan-400 rounded-full shadow-lg shadow-cyan-400/50" />
+        <div className="absolute top-0 left-1/2 w-2 h-2 -translate-x-1/2 -translate-y-1/2 bg-purple-400 rounded-full shadow-lg shadow-purple-400/50" />
+        <div className="absolute top-1/2 right-0 w-2 h-2 translate-x-1/2 -translate-y-1/2 bg-purple-400 rounded-full shadow-lg shadow-purple-400/50" />
+        <div className="absolute bottom-0 left-1/2 w-2 h-2 -translate-x-1/2 translate-y-1/2 bg-purple-400 rounded-full shadow-lg shadow-purple-400/50" />
+        <div className="absolute top-1/2 left-0 w-2 h-2 -translate-x-1/2 -translate-y-1/2 bg-purple-400 rounded-full shadow-lg shadow-purple-400/50" />
       </div>
       
       {/* Inner rotating element */}
       <div 
-        className="absolute inset-2 rounded-full border-2 border-dashed border-cyan-400/30 animate-spin"
+        className="absolute inset-2 rounded-full border-2 border-dashed border-purple-400/30 animate-spin"
         style={{
           animationDuration: '15s',
           animationDelay: `${delay + 1}s`,

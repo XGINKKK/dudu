@@ -4,20 +4,20 @@ interface SystemMetricProps {
   icon: React.ReactNode;
   label: string;
   value: string;
-  color: 'cyan' | 'green' | 'blue';
+  color: 'purple' | 'green' | 'violet';
 }
 
 const SystemMetric: React.FC<SystemMetricProps> = ({ icon, label, value, color }) => {
   const getColorClasses = (color: string) => {
     switch (color) {
-      case 'cyan':
-        return 'text-cyan-400 border-cyan-400/30';
+      case 'purple':
+        return 'text-purple-400 border-purple-400/30';
       case 'green':
         return 'text-green-400 border-green-400/30';
-      case 'blue':
-        return 'text-blue-400 border-blue-400/30';
+      case 'violet':
+        return 'text-violet-400 border-violet-400/30';
       default:
-        return 'text-cyan-400 border-cyan-400/30';
+        return 'text-purple-400 border-purple-400/30';
     }
   };
 

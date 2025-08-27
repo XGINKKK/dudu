@@ -3,13 +3,13 @@ import React from 'react';
 interface CircularProgressProps {
   percentage: number;
   size?: 'sm' | 'md' | 'lg';
-  color?: 'cyan' | 'green' | 'blue';
+  color?: 'purple' | 'green' | 'violet';
 }
 
 const CircularProgress: React.FC<CircularProgressProps> = ({ 
   percentage, 
   size = 'md', 
-  color = 'cyan' 
+  color = 'purple' 
 }) => {
   const sizeClasses = {
     sm: 'w-12 h-12',
@@ -18,9 +18,9 @@ const CircularProgress: React.FC<CircularProgressProps> = ({
   };
 
   const colorClasses = {
-    cyan: 'stroke-cyan-400',
+    purple: 'stroke-purple-400',
     green: 'stroke-green-400',
-    blue: 'stroke-blue-400'
+    violet: 'stroke-violet-400'
   };
 
   const radius = 20;
