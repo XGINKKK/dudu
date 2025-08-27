@@ -27,7 +27,7 @@ const StatusPanel: React.FC<StatusPanelProps> = ({ title, icon, metrics }) => {
   };
 
   return (
-    <div className="bg-gradient-to-br from-slate-800/30 to-slate-900/30 backdrop-blur-sm border border-purple-500/20 rounded-lg p-4 hover:border-purple-400/40 transition-colors duration-300">
+    <div className="bg-gradient-to-br from-gray-900/40 to-black/40 backdrop-blur-sm border border-purple-500/20 rounded-lg p-4 hover:border-purple-400/40 transition-colors duration-300 shadow-lg">
       <div className="flex items-center space-x-2 mb-4">
         <div className="text-purple-400">
           {icon}

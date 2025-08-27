@@ -22,7 +22,7 @@ const SystemMetric: React.FC<SystemMetricProps> = ({ icon, label, value, color }
   };
 
   return (
-    <div className={`flex items-center space-x-2 px-4 py-2 rounded-full border bg-slate-900/30 backdrop-blur-sm ${getColorClasses(color)}`}>
+    <div className={`flex items-center space-x-2 px-4 py-2 rounded-full border bg-black/40 backdrop-blur-sm ${getColorClasses(color)}`}>
       <div className={getColorClasses(color).split(' ')[0]}>
         {icon}
       </div>

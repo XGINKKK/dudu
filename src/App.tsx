@@ -27,10 +27,10 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-900 relative overflow-hidden">
+    <div className="min-h-screen bg-slate-950 relative overflow-hidden">
       {/* Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(147,51,234,0.1)_0%,transparent_50%)]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-gray-900 to-black" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(147,51,234,0.08)_0%,transparent_60%)]" />
       
       {/* Grid Pattern */}
       <div className="absolute inset-0 opacity-20">
@@ -151,7 +151,7 @@ function App() {
       </div>
 
       {/* Bottom Metrics Bar */}
-      <div className="fixed bottom-0 left-0 right-0 z-10 border-t border-purple-500/20 p-3 bg-gray-900/80 backdrop-blur-sm">
+      <div className="fixed bottom-0 left-0 right-0 z-10 border-t border-purple-500/20 p-3 bg-slate-950/90 backdrop-blur-sm">
         <div className="flex justify-center space-x-8">
           <SystemMetric 
             icon={<Activity className="w-4 h-4" />} 
